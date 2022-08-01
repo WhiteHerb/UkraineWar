@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>WarInFo - Ukraina</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- function scripts -->
+		<script src="assets/js/tool.js"></script>
+		
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="/" class="logo"><%= date %></a>
+					</header>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul class="links">
+						<li><a href="/">Main</a></li>
+						<li><a href="/Tree">make tree</a></li>
+						<li class="active"><a href="/WarInfo">war information</a></li>
+					</ul>
+					<ul class="icons">
+						<li><a href="https://www.instagram.com/hsch.ool/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						
+					</ul>
+				</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<div id="cause">
+								<script>
+									const maindiv = document.getElementById("cause")
+									const cause = <%- JSON.stringify(cause) %>
+									usetool(maindiv,cause)
+								</script>
+							</div>
+							<div id="process">
+								<script>
+									const maindiv_ = document.getElementById("process")
+									const process = <%- JSON.stringify(process) %>
+									usetool(maindiv_,process)
+								</script>
+							</div>
+							
+							<section class="post">
+								<header class="major">
+									<h1>전쟁 피해</h1>
+								</header>
+
+								<!-- Text stuff -->
+									<header>
+										<h2> 인명피해 </h2>
+										<h3>우크라이나</h3>
+										<p>
+											<ul>
+												<li> 민간인 사상자 9197명 (사망 4183명, 부상 5014명)</li>
+												<li> 포로 : 남부 항구도시 마리우폴에서 붙잡힌 우크라이나 포로들 2500명, 아조우스탈에서 생포된 뒤 재판을 기다리는 포로 2000여 명</li>
+												<li> 우크라이나 검찰은 전쟁 발발 후 매일 200건에서 300건 정도의 러시아군 전쟁 범죄가 보고되고 있다고 주장. 1만 5천 건 이상의 범죄 혐의에 대해 조사 중</li>
+												<li> 러시아 군의 소이탄, 백린탄 투하로 인한 인명 피해 </li>
+											</ul>
+										</p>
+										<hr />
+										<h3>러시아</h3>
+										<a href="" class="image main"><img src="images/russialosses.png" alt=""></a>
+										<hr />
+									</header>
+									<header>
+										<h2>경제 피해</h2>
+										<h3>유가 급등</h3>
+										<p>
+											<ul>
+												<li> 6/3 서부텍사스산원유(WTI) 가격 : 배럴당 118.9 달러, 브렌트유 : 119.7 달러로 120달러 선에 바짝 다가서고 있음</li>
+												<li> 1970년대 석유파동 때보다 더 큰 에너지 위기라는 진단도 있음, 배럴당 150달러를 넘어설 것이라는 전망도 나옴 </li>
+												<br>
+												<h4>이달석 에너지경제연구원 명예선임연구위원</h4>
+												<BLOCKQUOTE>
+													“세계적으로 석유 재고가 상당히 낮은 수준”<br /> 
+													“애초 전쟁이 끝나지 않으면 100~150달러 범위에서 움직일 것이라고 봤는데 <br /> 이 같은 흐름이 연중 계속될 것으로 보인다.”
+												</BLOCKQUOTE>
+												
+												<h4>조홍종 단국대 교수</h4>
+												<BLOCKQUOTE>
+													“전 세계적으로 LNG 공급이 줄어들며 올겨울에는 가격이 문제가 아니라 <br /> 물량이 없어서 발전소를 돌리지 못하는 상황까지 올 수 있다.”
+												<br /><a href="https://www.joongang.co.kr/article/25073776">기사</a></BLOCKQUOTE>
+											</ul>
+										</p>
+										<p>
+											<a href="" class="image img"><img src="images/oil.png" alt=""></a>
+											<ul>
+												<li>5월 우리나라의 석유류는 34.8% 치솟으면서 전체 물가 상승률의 1.50%포인트를 기여했다. 세부 품목을 살펴보면, 석유류 상승은 △경유(45.8%) △휘발유(27.0%) △등유(60.8%)등이 주도</li> <a href="https://www.news1.kr/articles/?4701755">원본</a>
+											<li>유럽연합(EU)의 러시아산 석유 금수 조치. 서유럽 국가들은 러시아산 석유 수입을 중단하고 값비싼 대체재로 눈을 돌렸다. 러시아산 석유 수입량 면에서 1,2위를 달리는 독일과 폴란드가 올해 말 까지 러시아 석유 수입을 중단하겠다고 밝혔기 때문에 이론적으로는 EU 전체의 러시아산 석유 수입은 현재의 90%까지 줄어들 것으로 보인다. 하지만 드루즈바 송유관을 통해 러시아산 석유를 공급받는 국가 중 독일만이 석유 수입을 줄였고, 나머지 국가들은 석유 수입량을 되려 늘렸다.</li><a href="https://www.yna.co.kr/view/AKR20220608118000009?input=1195m">원본</a>
+												<li>석유수출국기구, OPEC과 러시아 등 주요 산유국들이 원유 증산에 속도를 내기로 합의. 7월과 8월에 64만8천 배럴씩 원유 생산을 늘리겠다고 밝힘. 러시아의 침공 이후 미국 등 서방국가들은 국제 유가 급등에 대한 해결책으로 산유국들에게 원유 생산을 늘릴 것을 요구했지만 그동안 응하지 않다가 이번에 입장을 바꿈. 이에 국제 유가의 성장세가 잡힐 것을 기대하는 이들이 있음.</li><a href="https://imnews.imbc.com/replay/2022/nwtoday/article/6375060_35752.html">원본</a>
+											</ul>
+										</p>
+									
+									<!-- <hr /> -->
+
+								<!-- Lists -->
+									<h3>환율 급등</h3>
+									<a href="" class="image fit"><img src="images/exchange.png" alt=""></a>
+									<p>
+										<ul>
+											<li>환율 급등으로 인해 우리나라 물가 상승. 6월 9일 한국은행의 통화신용정책 보고서에 따르면 이번 환율 상승기(2020년 12월~2022년 5월)의 원·달러 환율 상승 폭은 183원이다. 과거 상승기와 비교하면 상대적으로 완만히 올랐지만, 2월 러시아의 우크라이나 침공 이후로 살펴보면, 환율 상승 속도는 하루 1.15원으로 치솟음. 올해 1분기 소비자물가 상승률(3.8%) 가운데 약 9%(0.34%포인트)는 환율 상승에 따른 것이다. “환율의 물가 전가율이 높아지는 가운데 향후 환율 상승이 국내 인플레이션 압력에 미치는 영향에 보다 유의할 필요가 있다” (보고서에서)</li><a href="http://news.heraldcorp.com/view.php?ud=20220609000559">원본</a>
+											<li>러시아의 우크라이나 침공 영향으로 원달러 환율이 1200원까지 상승. 외환 시장관계자 “러시아와 우크라이나 간의 무력 충돌과 인플레이션 우려 확산 등으로 위험회피 심리가 작용하면서 이날 원달러 환율은 1190원 후반에서 1200원 초반에서 등락할 가능성이 높다”</li><a href="http://www.segye.com/newsView/20220512511068?OutUrl=naver">원본</a>
+										</ul>
+									</p>
+									
+									<!-- <hr /> -->
+
+									<h3>공급망 중단</h3>
+									<a href="" class="imgage fit"><img src="images/supply.png" alt=""></a>
+									<p>
+										<ul>
+											<li>전쟁이 시작된 후 주요 곡물 수출국인 러시아와 우크라이나의 곡물을 아프리카와 중동으로 실어 나르던 흑해 항로가 막히면서 세계적인 식량난이 현실화되고 있다. 볼로디미르 젤렌스키 대통령은 흑해 봉쇄로 인해 우크라이나에 쌓여 있는 곡물이 현재 2200만~2500만t이고 가을이면 7500만t에 이를 수 있다고 밝혔다.(5/27)</li><a href="https://www.hani.co.kr/arti/international/europe/1046267.html">원본</a>
+											<li>루이지 디 마이오 이탈리아 외무장관은 6월 8일 “이미 일부 국가에 영향을 미치는 식량 위기가 우크라이나 전쟁으로 글로벌 식량 위기로 악화할 위험이 있다”며 “지금 대응하지 않으면 훨씬 더 파괴적인 결과를 초래할 것”이라고 이야기했다.</li><a href="https://www.yna.co.kr/view/AKR20220609003600109?input=1195m">원본</a>
+											<li>미 국제식량정책연구소(IFPRI) 자료에 의하면 6월 7일 기준 실질적으로 식량 수출을 금지하는 나라가 20개국으로 늘어났다고 한다. 인도, 말레이시아, 아르헨티나, 가나 등 중동과 아프리카, 아시아 등에 걸쳐 식량 보호주의를 강화하고 있다. 수출 금지 대상도 밀, 식용유, 닭고기, 쇠고기 등 많이 섭취하는 품목들이다. 이는 러시아의 흑해 봉쇄로 인한 영향이고, 우크라이나는 전 세계 해바라기유 공급의 절반을 담당하고 있으며, 세계 5위 밀 수출국이다.</li><a href="https://www.edaily.co.kr/news/read?newsId=02456726632360080&mediaCodeNo=257&OutLnkChk=Y">원본</a>
+											<li>12일 통계청 국가통계포털(KOSIS)에 따르면 지난달 외식 물가지수는 작년 12월보다 4.2% 올라 전체 소비자물가지수 상승률(3.4%)를 웃돌았다. 우크라이나 사태와 국제 곡물·원자재 가격 급등, 물류비 상승 등도 외식물가 상승 압력을 높이는데 일부 작용했다. </li><a href="https://www.news1.kr/articles/?4709201">원본</a>
+											<li>서방이 제재를 받는 러시아 경제가 빠르게 중고경제로 빠져들고 있다. 서방의 여객기 부품을 확보하지 못한 러시아 항공사들은 큰 위기에 봉착했다. 러시아 상업 여객기의 80%가 에어버스와 보잉 등 서방 항공기인 상황에서 두 회사가 러시아와의 거래를 끊었기 때문이다. 에릭슨과 노키아 역시 러시아와 단절하면서 이동통신 사업자들은 전세계의 중고 중계탑과 부품을 구하기 위해 애쓰고 있다. 중국 화웨이사조차 러시아에 이동통신 장비 공급을 꺼리고 있다. 또한 마이크로칩 등 개발이 어려운 첨단 기술 분야가 가장 큰 타격을 받고 있다.</li><a href="https://newsis.com/view/?id=NISX20220527_0001888122&cID=10101&pID=10100">원본</a>
+											<li>원자재값 급등 여파가 일반의약품 가격 인상으로까지 이어졌다. 일반의약품 가격이 줄줄이 인상될 예정이다. 6월 9일 제약업계에 따르면 일동제약과 GC녹십자, 광동제약 등이 약국에서 판매하는 일반의약품 가격을 올릴 예정이다. 일동제약 관계자는 “제품 가격인상은 원자재 가격 인상 및 유통 증가에 따른 전반적인 원가 상승에 따른 조치”라고 말했다.</li><a href="http://www.econovill.com/news/articleView.html?idxno=578196">원본</a>
+											<li>6월 2일 로이터, 타스 통신 등이 러시아가 반도체 생산의 핵심 소재인 네온 등 희소한 가스의 수출을 올해 발까지 제한하기로 했다고 보도했다. 러시아는 올해 말까지 네온과 아르곤, 헬륨 등 반도체 생산에 쓰이는 희귀 불활성 가스를 수출하려면 정부 특별 허가를 받도록 하는 등 비우호국에 대한 수출 제한 조치를 단행했다. </li><a href="https://www.yna.co.kr/view/AKR20220603039400009?input=1195m">원본</a>
+										</ul>
+									</p>
+									<!-- <hr /> -->
+									<h3>세계 문화적 측면</h3>
+									<p>
+										<ul>
+											<li>- 국제올림픽위원회(IOC) 집행위원회는 2월 28일 블라디미르 푸틴 대통령 등 주요 러시아 정부 인사들의 올림픽 훈장을 철회한다고 밝혔다. 성명에서 “러시아 정부의 올림픽 휴전 결의에 대한 매우 중대한 위반과 과거 올림픽 헌장에 대한 다른 위반 등을 고려해” 특별 결정을 내렸다고 했다.</li><a href="https://n.news.naver.com/mnews/article/056/0011221552?sid=104">원본</a>
+											<li>- 국제 해커집단 어나니머스(Anonymouys)가 우크라이나 침공에 참전한 러시아군의 개인 신상정보를 해킹해 유출했다고 주장했다. 유출된 러시아군의 개인정보에는 생년월일, 이름, 집주소, 여권번호 등이 포함된 것으로 알려졌다.</li><a href="https://www.sedaily.com/NewsView/264L7N3G5N">원본</a>
+											<li>- 미국 워싱턴포스트(WP)가 러시아 라디오 방송국의 뉴스 도중 해킹으로 인해 전쟁을 반대하는 의미의 우크라이나 행진곡이 흘렀다고 보도했다. 국제 해커 단체 ‘어나니머스’는 침공 사흘 만인 지난 2월2일 러시아 국방부와 크렘린궁 웹사이트, 국영TV를 차례로 해킹했다. 당시 어나니머스는 “러시아 국영 TV 채널을 해킹해, 우크라이나에서 무슨 일이 벌어지고 있는지 현실을 방송하고 있다”고 밝힌 적도 있다.</li><a href="https://newsis.com/view/?id=NISX20220609_0001901738&cID=10101&pID=10100">원본</a>
+										</ul>
+									</p>
+									
+								</header>
+								<hr />
+								<header>
+									<h2>난민 문제</h2>
+									<p>
+										<ul>
+											<li>- 6월 9일 유엔 난민 기관이 러시아 침공 후 우크라이나 국민 481만6923명이 국경을 넘어 피난한 뒤 유럽 44개 국에 ‘난민’ 신분 등록을 했다고 말했다. 실제로는 이보다 더 많은 우크라 인들이 2월 24일 후 조국을 떠났다. 우크라 국경 당국이 기록한 침공 후 출국 건 수는 침공 104일 째인 6월 7일 기준으로 730만 건이 넘는다.</li><a href="https://newsis.com/view/?id=NISX20220609_0001902423&cID=10101&pID=10100">원본</a>
+											<li>- 우크라이나 난민 대부분은 유럽연합(EU) 국가로 향했고 폴란드, 루마니아 등 이웃 국가도 우크라이나인에게 국경을 개방했다. 폴란드와 독일 등은 우크라이나 난민을 무제한 수용하면서 정착을 위한 지원에 적극적이다. EU 집행위원회는 개전 직후부터 우크라이나 난민에게 빠른 지원을 제공하기 위해 ‘임시 보호 명령’ 제도를 시행했다. 또한, EU내무장관들은 3월 초 러시아의 공격을 피해 EU 회원국으로 오는 우크라이나 난민에게 거주권 등을 보장하기로 협의했다. 독일에 도착한 우크라이나 난민은 망명 신청을 할 필요도 없이 3년간의 거주 허가를 얻을 수 있다. 폴란드는 경제적 어려움에도 우크라이나 전채 난민의 절반 이상인 370만 명을 받아들였다. </li><a href="https://www.yna.co.kr/view/AKR20220607107600009?input=1195m">원본</a>
+										</ul>
+									</p>
+								</header>
+
+						</section>
+					</footer>
+
+					</div>
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; <%= footer[0] %></li><li>Creater: <a href="<%= footer[1] %>"><%= footer[2] %></a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
